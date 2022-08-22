@@ -34,17 +34,8 @@
     --gray10: #616161; 
 }
 
-.main {
-    position: relative;
-}
-
-.wrapper {
-    width: 902px;
-    margin: auto;
-}
-
-.main-content {
-    padding: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -58,24 +49,13 @@ a {
     color: var(--gray30);
 }
 
-h1 {
-  font-size: 60px; 
-  /*text-decoration: underline;*/
-  /*font-size: 3.75em;*/
-  margin-top: 64px;
-  margin-bottom: 16px;
-}
-
-/*h1 + p {
-    margin-bottom: 64px;
-}*/
-
 header{ 
     font-size: 14px;
+    width: 188px;
     color: var(--gray10);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 64px;
+    left: -232px;
     /*z-index: 1;*/
 }
 
@@ -90,12 +70,36 @@ header a:hover {
 
 nav details summary {
     font-weight: bold;
+    line-height: 24px;
+}
+
+header li {
+    margin-bottom: 16px;
+
+}
+
+h1 {
+    font-size: 60px; 
+    /*text-decoration: underline;*/
+    /*font-size: 3.75em;*/
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+/*h1 + p {
+    margin-bottom: 64px;
+}*/
+
+hr {
+    margin: 64px 0 ;
+    /*color:;*/
 }
 
 h2 {
-   font-size: 2em ; 
-   margin: 64px 0 40px;
-   font-weight: normal;
+    font-size: 2em ; 
+    margin: 64px 0 40px;
+    font-weight: normal;
 }
 
 h3 {
@@ -103,11 +107,14 @@ h3 {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
 pre {
     background: #FEC62E;
-    padding: 35px;
+    padding: 40px;
     font-family: "Roboto";
     line-height: 24px;
 }
@@ -128,6 +135,30 @@ blockquote span::before {
     content: "-" ;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+}
+
+.main {
+    /*background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent ), url("../Imagenes/pattern.jpg");*/
+}
+
+.wrapper {
+    width: 902px;
+    margin: auto;
+}
+
+.main-content {
+    /*padding: 20px;*/
+    background: white;
+}
+
+
 .hero {
     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent ), url("../Imagenes/pattern.jpg");
     height: 350px;
@@ -135,6 +166,7 @@ blockquote span::before {
 
 .section-content {
     margin-top: 164px;
+    position: relative;
 }
 
 .section-content:first-of-type {
@@ -151,6 +183,10 @@ blockquote span::before {
 
 .section-content + hr {
     display: none;
+}
+
+.section-content img {
+    margin-top: 40px;
 }
 
 .section-content {
@@ -173,14 +209,7 @@ blockquote span::before {
     background: var(--gray30);
     display: inline-block;
     position: absolute;
-    
-}
-hr {
-    margin: 64px 0 ;
-    /*color:;*/
-}
+    left: 0;
+    bottom: 0;
 
-.section-content img {
-    margin-top: 40px;
 }
-
